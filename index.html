@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gradient-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, #ffffff, #7b7b7b);
+  flex: 1;
+  padding-bottom: 60px;
+}
+
+    /* ── Logo section ── */
+    .logo {
+      margin-top: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+
+    /* ── Page content ── */
+    .content {
+      margin-top: 48px;
+      text-align: center;
+      padding: 0 24px;
+    }
+
+    .content h1 {
+      font-size: 4rem;
+      color: #222222;
+      margin-top: 100px;
+    }
+
+    
+    /* ── Navigation bar ── */
+    .nav-bar {
+      margin-top: 20px;
+      width: 100%;
+      background-color: #ffffff;
+      
+      display: flex;
+      overflow: hidden;
+    }
+ 
+    .nav-bar a {
+      flex: 1;
+      text-align: center;
+      padding: 18px 0;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #333333;
+      letter-spacing: 0.05em;
+      transition: background-color 0.2s, color 0.2s;
+    }
+ 
+    .nav-bar a:hover {
+      background-color: #333333;
+      color: #ffffff;
+    }
+ 
+    .nav-bar a:not(:last-child) {
+      border-right: 1px solid #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">
+    <img src="logo.png" alt="My Logo" width="450">
+    </div>
+  </div>
+
+
+  <nav class="nav-bar">
+    <a href="#about">Buy</a>
+    <a href="#services">Sell</a>
+    <a href="#contact">Rent</a>
+  </nav>
+
+
+<div class="gradient-section">
+<div class="content">
+    <h1>Coming soon</h1>
+  </div>
+
+</body>
+</html>
