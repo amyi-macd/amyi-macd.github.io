@@ -25,19 +25,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to bottom, #ffffff, #7b7b7b);
+  background: linear-gradient(to bottom, #ffffff, #999999);
   flex: 1;
   padding-bottom: 60px;
 }
 
     /* ── Logo section ── */
     .logo {
-      margin-top: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
-    }
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.logo img {
+  width: 80%;
+  max-width: 900px;
+  min-width: 100px;
+  height: auto;
+}
+
+    
 
 
     /* ── Page content ── */
@@ -48,11 +57,17 @@
     }
 
     .content h1 {
-      font-size: 4rem;
-      color: #302f2f;
+      color: #4b555f;
       margin-top: 10px;
+      font-size: clamp(1.75rem, 4vw, 4rem);
     }
 
+    /*.content h2 {
+      font-size: 4rem;
+      color: #4b555f;
+      margin-top: 10px;
+      letter-spacing: 0.05em;
+    }*/
     
     /* ── Navigation bar ── */
     .nav-bar {
@@ -66,9 +81,9 @@
     .nav-bar a {
       flex: 1;
       text-align: center;
-      padding: 18px 0;
+      padding: clamp(10px, 2vw, 18px) 0;
       text-decoration: none;
-      font-size: 1.3rem;
+      font-size: clamp(0.75rem, 2.5vw, 2rem);
       font-weight: 600;
       color: #333333;
       letter-spacing: 0.05em;
@@ -76,7 +91,7 @@
     }
  
     .nav-bar a:hover {
-      background-color: #333333;
+      background-color: #4b555f;
       color: #ffffff;
     }
  
@@ -92,15 +107,15 @@
     <a href="#services">Sell</a>
     <a href="#contact">Rent</a>
   </nav>
-
-  <div class="logo">
-    <img src="logo.png" alt="My Logo" width="650">
-    </div>
   
+  <div class="logo">
+    <img src="logo2.png" alt="My Logo" >
+    </div>
+   
 
 <div class="gradient-section">
 <div class="content">
-    <h1>Coming soon</h1>
+    <h1>Coming Soon</h1>
   </div>
 </div>
 
